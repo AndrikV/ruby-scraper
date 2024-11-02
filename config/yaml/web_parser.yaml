@@ -1,0 +1,18 @@
+web_scraping:
+  # URL початкової сторінки для збору даних
+  start_page: https://rozetka.com.ua/notebooks/c80004/
+  
+  # CSS селектор для отримання назв ноутбуків
+  product_name_selector: ".goods-tile__title"
+  
+  # CSS селектор для отримання цін ноутбуків
+  product_price_selector: ".goods-tile__price-value"
+  
+  # CSS селектор для отримання опису ноутбуків
+  product_description_selector: ".goods-tile__description"
+  
+  # CSS селектор для отримання зображень ноутбуків
+  product_image_selector: ".goods-tile__picture"
+
+  # CSS селектор для отримання кількості відгуків
+  product_image_selector: ".rating-block-content"
