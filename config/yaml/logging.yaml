@@ -1,0 +1,14 @@
+logging:
+  # місце розміщення папки для логів
+  directory: logs
+
+  # рівень логування
+  level: DEBUG
+
+  # назви файлів для логів
+  files:
+    # Назва файлу для логів додатку
+    application_log: "app.log"
+    
+    # Назва файлу для логів помилок
+    error_log: "error.log"
