@@ -1,5 +1,4 @@
 require 'logger'
-require 'yaml'
 
 module MyApplicationName
     class LoggerManager
@@ -8,8 +7,7 @@ module MyApplicationName
             @info_logger = nil
             @error_logger = nil
 
-            def setup(config_path)
-                config = YAML.load_file(config_path)['logging']
+            def setup(config)
                 directory = config['directory'] || './logs'
                 log_level = config['level'] || 'INFO'
                 files = config['files'] || { 'application_log' => 'hello.log', 'error_log' => 'error.log' }
