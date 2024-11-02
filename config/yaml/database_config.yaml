@@ -1,0 +1,20 @@
+database_config:
+  # Тип бази даних, що використовується в проекті
+  database_type: sqlite    # або 'mongodb'
+
+  sqlite_database:
+    # Шлях до файлу бази даних SQLite
+    db_file: db/local_database.sqlite
+
+    # Час очікування на підключення в мілісекундах
+    timeout: 5000
+
+    # Розмір пулу з'єднань
+    pool_size: 5
+
+  mongodb_database:
+    # URL для підключення до MongoDB
+    url: mongodb://localhost:27017
+    
+    # Назва бази даних MongoDB
+    db_name: ruby_scraper
