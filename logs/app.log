@@ -1,12 +1,36 @@
-# Logfile created on 2024-11-02 18:31:40 +0000 by logger.rb/v1.6.1
-I, [2024-11-02T18:31:40.712121 #38573]  INFO -- : Processed a file successfully.
-I, [2024-11-02T23:04:02.666500 #21292]  INFO -- : Processed a file successfully.
-I, [2024-11-02T23:19:39.243686 #26112]  INFO -- : Processed a file successfully.
-I, [2024-11-02T23:20:19.978238 #25416]  INFO -- : Processed a file successfully.
-I, [2024-11-02T23:28:38.465228 #26112]  INFO -- : Processed a file successfully.
-I, [2024-11-02T23:29:54.507915 #25384]  INFO -- : Processed a file successfully.
-I, [2024-11-02T23:30:04.267699 #16988]  INFO -- : Processed a file successfully.
-I, [2024-11-02T23:30:30.600320 #11636]  INFO -- : Processed a file successfully.
-I, [2024-11-02T23:30:34.336039 #15352]  INFO -- : Processed a file successfully.
-I, [2024-11-02T23:31:01.749544 #10876]  INFO -- : Processed a file successfully.
-I, [2024-11-02T23:33:47.028019 #17600]  INFO -- : Processed a file successfully.
+I, [2024-11-08T19:06:22.508385 #96450]  INFO -- : Item initialized with name: Sample Product, price: 99.99, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
+I, [2024-11-08T19:06:22.508453 #96450]  INFO -- : Item initialized with name: Partial Product, price: 49.99, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:06:22.508472 #96450]  INFO -- : Item initialized with name: Placeholder, price: 0.0, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:06:23.106371 #96450]  INFO -- : Item initialized with name: Fantastic Silk Bench, price: 77.24, rating: 2, rating_amount: 595, image_path: https://loremflickr.com/300/300
+I, [2024-11-08T19:06:23.106428 #96450]  INFO -- : Generated fake Item: Item Details - name: Fantastic Silk Bench, price: 77.24, rating: 2, rating_amount: 595, image_path: https://loremflickr.com/300/300
+I, [2024-11-08T19:06:23.106461 #96450]  INFO -- : Item updated with name: Updated Product, price: 120.0, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
+I, [2024-11-08T19:06:23.106476 #96450]  INFO -- : Item initialized with name: Item A, price: 10.0, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:06:23.106484 #96450]  INFO -- : Item initialized with name: Item B, price: 20.0, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:06:23.106534 #96450]  INFO -- : Item updated with name: Updated Product, price: 120.0, rating: 3.5, rating_amount: 200, image_path: /images/sample.png
+I, [2024-11-08T19:13:22.387796 #247]  INFO -- : Item initialized with name: Sample Product, price: 99.99, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
+I, [2024-11-08T19:13:22.388749 #247]  INFO -- : Item initialized with name: Partial Product, price: 49.99, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:13:22.388774 #247]  INFO -- : Item initialized with name: Placeholder, price: 0.0, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:13:22.983198 #247]  INFO -- : Item initialized with name: Small Rubber Bench, price: 21.08, rating: 1, rating_amount: 861, image_path: https://loremflickr.com/300/300
+I, [2024-11-08T19:13:22.983250 #247]  INFO -- : Generated fake Item: Item Details - name: Small Rubber Bench, price: 21.08, rating: 1, rating_amount: 861, image_path: https://loremflickr.com/300/300
+I, [2024-11-08T19:13:22.983281 #247]  INFO -- : Item updated with name: Updated Product, price: 120.0, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
+I, [2024-11-08T19:13:22.983298 #247]  INFO -- : Item initialized with name: Item A, price: 10.0, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:13:22.983307 #247]  INFO -- : Item initialized with name: Item B, price: 20.0, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:13:22.983357 #247]  INFO -- : Item updated with name: , price: 120.0, rating: 3.5, rating_amount: 200, image_path: /images/sample.png
+I, [2024-11-08T19:22:37.953861 #5548]  INFO -- : Item initialized with name: Sample Product, price: 99.99, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
+I, [2024-11-08T19:22:37.954121 #5548]  INFO -- : Item initialized with name: Partial Product, price: 49.99, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:22:37.954145 #5548]  INFO -- : Item initialized with name: Placeholder, price: 0.0, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:22:38.554397 #5548]  INFO -- : Item initialized with name: Small Granite Bench, price: 41.68, rating: 5, rating_amount: 380, image_path: https://loremflickr.com/300/300
+I, [2024-11-08T19:22:38.554446 #5548]  INFO -- : Generated fake Item: Item Details - name: Small Granite Bench, price: 41.68, rating: 5, rating_amount: 380, image_path: https://loremflickr.com/300/300
+I, [2024-11-08T19:22:38.554474 #5548]  INFO -- : Item updated with name: Updated Product, price: 120.0, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
+I, [2024-11-08T19:22:38.554491 #5548]  INFO -- : Item initialized with name: Item A, price: 10.0, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:22:38.554511 #5548]  INFO -- : Item initialized with name: Item B, price: 20.0, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:22:38.554556 #5548]  INFO -- : Item updated with name: , price: 120.0, rating: 3.5, rating_amount: 200, image_path: /images/sample.png
+I, [2024-11-08T19:23:03.954596 #5829]  INFO -- : Item initialized with name: Sample Product, price: 99.99, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
+I, [2024-11-08T19:23:03.954755 #5829]  INFO -- : Item initialized with name: Partial Product, price: 49.99, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:23:03.954776 #5829]  INFO -- : Item initialized with name: Placeholder, price: 0.0, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:23:04.539686 #5829]  INFO -- : Item initialized with name: Fantastic Iron Clock, price: 22.12, rating: 2, rating_amount: 325, image_path: https://loremflickr.com/300/300
+I, [2024-11-08T19:23:04.539742 #5829]  INFO -- : Generated fake Item: Item Details - name: Fantastic Iron Clock, price: 22.12, rating: 2, rating_amount: 325, image_path: https://loremflickr.com/300/300
+I, [2024-11-08T19:23:04.539772 #5829]  INFO -- : Item updated with name: Updated Product, price: 120.0, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
+I, [2024-11-08T19:23:04.539792 #5829]  INFO -- : Item initialized with name: Item A, price: 10.0, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:23:04.539801 #5829]  INFO -- : Item initialized with name: Item B, price: 20.0, rating: 0.0, rating_amount: 0, image_path: default.png
+I, [2024-11-08T19:23:04.539848 #5829]  INFO -- : Item updated with name: , price: 120.0, rating: 3.5, rating_amount: 200, image_path: /images/sample.png

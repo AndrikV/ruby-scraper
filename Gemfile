@@ -7,3 +7,5 @@ gem 'selenium-webdriver', '~> 4.25'
 
 # https://rubygems.org/gems/rubocop
 gem 'rubocop', '~> 1.66', '>= 1.66.1'
+
+gem 'faker'
