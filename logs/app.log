@@ -1,36 +1,32 @@
-I, [2024-11-08T19:06:22.508385 #96450]  INFO -- : Item initialized with name: Sample Product, price: 99.99, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
-I, [2024-11-08T19:06:22.508453 #96450]  INFO -- : Item initialized with name: Partial Product, price: 49.99, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:06:22.508472 #96450]  INFO -- : Item initialized with name: Placeholder, price: 0.0, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:06:23.106371 #96450]  INFO -- : Item initialized with name: Fantastic Silk Bench, price: 77.24, rating: 2, rating_amount: 595, image_path: https://loremflickr.com/300/300
-I, [2024-11-08T19:06:23.106428 #96450]  INFO -- : Generated fake Item: Item Details - name: Fantastic Silk Bench, price: 77.24, rating: 2, rating_amount: 595, image_path: https://loremflickr.com/300/300
-I, [2024-11-08T19:06:23.106461 #96450]  INFO -- : Item updated with name: Updated Product, price: 120.0, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
-I, [2024-11-08T19:06:23.106476 #96450]  INFO -- : Item initialized with name: Item A, price: 10.0, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:06:23.106484 #96450]  INFO -- : Item initialized with name: Item B, price: 20.0, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:06:23.106534 #96450]  INFO -- : Item updated with name: Updated Product, price: 120.0, rating: 3.5, rating_amount: 200, image_path: /images/sample.png
-I, [2024-11-08T19:13:22.387796 #247]  INFO -- : Item initialized with name: Sample Product, price: 99.99, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
-I, [2024-11-08T19:13:22.388749 #247]  INFO -- : Item initialized with name: Partial Product, price: 49.99, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:13:22.388774 #247]  INFO -- : Item initialized with name: Placeholder, price: 0.0, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:13:22.983198 #247]  INFO -- : Item initialized with name: Small Rubber Bench, price: 21.08, rating: 1, rating_amount: 861, image_path: https://loremflickr.com/300/300
-I, [2024-11-08T19:13:22.983250 #247]  INFO -- : Generated fake Item: Item Details - name: Small Rubber Bench, price: 21.08, rating: 1, rating_amount: 861, image_path: https://loremflickr.com/300/300
-I, [2024-11-08T19:13:22.983281 #247]  INFO -- : Item updated with name: Updated Product, price: 120.0, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
-I, [2024-11-08T19:13:22.983298 #247]  INFO -- : Item initialized with name: Item A, price: 10.0, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:13:22.983307 #247]  INFO -- : Item initialized with name: Item B, price: 20.0, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:13:22.983357 #247]  INFO -- : Item updated with name: , price: 120.0, rating: 3.5, rating_amount: 200, image_path: /images/sample.png
-I, [2024-11-08T19:22:37.953861 #5548]  INFO -- : Item initialized with name: Sample Product, price: 99.99, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
-I, [2024-11-08T19:22:37.954121 #5548]  INFO -- : Item initialized with name: Partial Product, price: 49.99, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:22:37.954145 #5548]  INFO -- : Item initialized with name: Placeholder, price: 0.0, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:22:38.554397 #5548]  INFO -- : Item initialized with name: Small Granite Bench, price: 41.68, rating: 5, rating_amount: 380, image_path: https://loremflickr.com/300/300
-I, [2024-11-08T19:22:38.554446 #5548]  INFO -- : Generated fake Item: Item Details - name: Small Granite Bench, price: 41.68, rating: 5, rating_amount: 380, image_path: https://loremflickr.com/300/300
-I, [2024-11-08T19:22:38.554474 #5548]  INFO -- : Item updated with name: Updated Product, price: 120.0, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
-I, [2024-11-08T19:22:38.554491 #5548]  INFO -- : Item initialized with name: Item A, price: 10.0, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:22:38.554511 #5548]  INFO -- : Item initialized with name: Item B, price: 20.0, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:22:38.554556 #5548]  INFO -- : Item updated with name: , price: 120.0, rating: 3.5, rating_amount: 200, image_path: /images/sample.png
-I, [2024-11-08T19:23:03.954596 #5829]  INFO -- : Item initialized with name: Sample Product, price: 99.99, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
-I, [2024-11-08T19:23:03.954755 #5829]  INFO -- : Item initialized with name: Partial Product, price: 49.99, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:23:03.954776 #5829]  INFO -- : Item initialized with name: Placeholder, price: 0.0, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:23:04.539686 #5829]  INFO -- : Item initialized with name: Fantastic Iron Clock, price: 22.12, rating: 2, rating_amount: 325, image_path: https://loremflickr.com/300/300
-I, [2024-11-08T19:23:04.539742 #5829]  INFO -- : Generated fake Item: Item Details - name: Fantastic Iron Clock, price: 22.12, rating: 2, rating_amount: 325, image_path: https://loremflickr.com/300/300
-I, [2024-11-08T19:23:04.539772 #5829]  INFO -- : Item updated with name: Updated Product, price: 120.0, rating: 4.5, rating_amount: 150, image_path: /images/sample.png
-I, [2024-11-08T19:23:04.539792 #5829]  INFO -- : Item initialized with name: Item A, price: 10.0, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:23:04.539801 #5829]  INFO -- : Item initialized with name: Item B, price: 20.0, rating: 0.0, rating_amount: 0, image_path: default.png
-I, [2024-11-08T19:23:04.539848 #5829]  INFO -- : Item updated with name: , price: 120.0, rating: 3.5, rating_amount: 200, image_path: /images/sample.png
+I, [2024-11-09T17:00:58.526029 #87945]  INFO -- : ItemCollection initialized
+I, [2024-11-09T17:00:59.155583 #87945]  INFO -- : Item initialized with name: Aerodynamic Rubber Coat, price: 61.21, rating: 2, rating_amount: 656, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155629 #87945]  INFO -- : Generated fake Item: Item Details - name: Aerodynamic Rubber Coat, price: 61.21, rating: 2, rating_amount: 656, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155644 #87945]  INFO -- : Item added: Item Details - name: Aerodynamic Rubber Coat, price: 61.21, rating: 2, rating_amount: 656, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155704 #87945]  INFO -- : Item initialized with name: Awesome Marble Coat, price: 15.88, rating: 3, rating_amount: 121, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155715 #87945]  INFO -- : Generated fake Item: Item Details - name: Awesome Marble Coat, price: 15.88, rating: 3, rating_amount: 121, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155724 #87945]  INFO -- : Item added: Item Details - name: Awesome Marble Coat, price: 15.88, rating: 3, rating_amount: 121, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155778 #87945]  INFO -- : Item initialized with name: Durable Granite Bench, price: 71.27, rating: 3, rating_amount: 753, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155787 #87945]  INFO -- : Generated fake Item: Item Details - name: Durable Granite Bench, price: 71.27, rating: 3, rating_amount: 753, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155795 #87945]  INFO -- : Item added: Item Details - name: Durable Granite Bench, price: 71.27, rating: 3, rating_amount: 753, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155849 #87945]  INFO -- : Item initialized with name: Synergistic Granite Computer, price: 29.07, rating: 4, rating_amount: 744, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155857 #87945]  INFO -- : Generated fake Item: Item Details - name: Synergistic Granite Computer, price: 29.07, rating: 4, rating_amount: 744, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155865 #87945]  INFO -- : Item added: Item Details - name: Synergistic Granite Computer, price: 29.07, rating: 4, rating_amount: 744, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155918 #87945]  INFO -- : Item initialized with name: Mediocre Steel Plate, price: 7.53, rating: 4, rating_amount: 259, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155927 #87945]  INFO -- : Generated fake Item: Item Details - name: Mediocre Steel Plate, price: 7.53, rating: 4, rating_amount: 259, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.155934 #87945]  INFO -- : Item added: Item Details - name: Mediocre Steel Plate, price: 7.53, rating: 4, rating_amount: 259, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.156435 #87945]  INFO -- : Items saved to text file: items.txt
+I, [2024-11-09T17:00:59.156541 #87945]  INFO -- : Items saved to JSON file: items.json
+I, [2024-11-09T17:00:59.156697 #87945]  INFO -- : Items saved to CSV file: items.csv
+I, [2024-11-09T17:00:59.157562 #87945]  INFO -- : Items saved to YAML files in directory: items_yml_directory
+I, [2024-11-09T17:00:59.157582 #87945]  INFO -- : ItemCollection initialized
+I, [2024-11-09T17:00:59.157654 #87945]  INFO -- : Item initialized with name: Synergistic Wooden Bottle, price: 39.72, rating: 3, rating_amount: 466, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.157666 #87945]  INFO -- : Generated fake Item: Item Details - name: Synergistic Wooden Bottle, price: 39.72, rating: 3, rating_amount: 466, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.157725 #87945]  INFO -- : Item initialized with name: Lightweight Leather Knife, price: 56.94, rating: 5, rating_amount: 82, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.157734 #87945]  INFO -- : Generated fake Item: Item Details - name: Lightweight Leather Knife, price: 56.94, rating: 5, rating_amount: 82, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.157797 #87945]  INFO -- : Item initialized with name: Heavy Duty Steel Coat, price: 70.45, rating: 2, rating_amount: 992, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.157807 #87945]  INFO -- : Generated fake Item: Item Details - name: Heavy Duty Steel Coat, price: 70.45, rating: 2, rating_amount: 992, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.157819 #87945]  INFO -- : Item added: Item Details - name: Synergistic Wooden Bottle, price: 39.72, rating: 3, rating_amount: 466, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.157827 #87945]  INFO -- : Item added: Item Details - name: Lightweight Leather Knife, price: 56.94, rating: 5, rating_amount: 82, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.157836 #87945]  INFO -- : Item added: Item Details - name: Heavy Duty Steel Coat, price: 70.45, rating: 2, rating_amount: 992, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.157866 #87945]  INFO -- : Item removed: Item Details - name: Lightweight Leather Knife, price: 56.94, rating: 5, rating_amount: 82, image_path: https://loremflickr.com/300/300
+I, [2024-11-09T17:00:59.157886 #87945]  INFO -- : All items cleared from collection

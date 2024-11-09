@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Aerodynamic Rubber Coat",
+    "price": 61.21,
+    "rating": 2,
+    "rating_amount": 656,
+    "image_path": "https://loremflickr.com/300/300"
+  },
+  {
+    "name": "Awesome Marble Coat",
+    "price": 15.88,
+    "rating": 3,
+    "rating_amount": 121,
+    "image_path": "https://loremflickr.com/300/300"
+  },
+  {
+    "name": "Durable Granite Bench",
+    "price": 71.27,
+    "rating": 3,
+    "rating_amount": 753,
+    "image_path": "https://loremflickr.com/300/300"
+  },
+  {
+    "name": "Synergistic Granite Computer",
+    "price": 29.07,
+    "rating": 4,
+    "rating_amount": 744,
+    "image_path": "https://loremflickr.com/300/300"
+  },
+  {
+    "name": "Mediocre Steel Plate",
+    "price": 7.53,
+    "rating": 4,
+    "rating_amount": 259,
+    "image_path": "https://loremflickr.com/300/300"
+  }
+]

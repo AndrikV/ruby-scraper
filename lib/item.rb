@@ -1,5 +1,7 @@
-require 'logger'
+require_relative 'logger_manager'
 require 'faker'
+
+Faker::Config.random = Random.new(1234)
 
 module MyApplicationName
   class Item
