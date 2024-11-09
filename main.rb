@@ -19,3 +19,7 @@ configurator.configure(
 )
 puts configurator.config
 puts Configurator.available_methods
+
+connector = DatabaseConnector.new(app_config.config_data['database_config'])
+connector.connect_to_database
+connector.close_connection
