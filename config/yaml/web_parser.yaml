@@ -3,16 +3,20 @@ web_scraping:
   start_page: https://rozetka.com.ua/notebooks/c80004/
   
   # CSS селектор для отримання назв ноутбуків
-  product_name_selector: ".goods-tile__title"
+  product_name_selector: "#\\#scrollArea > div.product-about > div.product-about__right > div > rz-title-block > div > div.inner > div > h1"
   
   # CSS селектор для отримання цін ноутбуків
-  product_price_selector: ".goods-tile__price-value"
+  product_price_selector: "#\\#scrollArea > div.product-about > div.product-about__right > div > rz-product-main-info > div > div.product-about__block.empty-none.ng-star-inserted > div > div.product-price__wrap.ng-star-inserted > p.product-price__big.product-price__big-color-red"
   
-  # CSS селектор для отримання опису ноутбуків
-  product_description_selector: ".goods-tile__description"
+  product_price_alt_selector: "#\\#scrollArea > div.product-about > div.product-about__right > div > rz-product-main-info > div > div.product-about__block.empty-none.ng-star-inserted > div > div.product-price__wrap.ng-star-inserted > p"
+  # CSS селектор для отримання рейтингу ноутбуків
+  product_rating_selector: "#\\#scrollArea > div.product-about > div.product-about__right > div > rz-title-block > div > div.rating.text-base > rz-stars-rating-progress > div > div.stars__rating"
+
+  product_rating_amount_selector: "#\\#scrollArea > div.product-about > div.product-about__right > div > rz-title-block > div > div.rating.text-base > a"
   
   # CSS селектор для отримання зображень ноутбуків
-  product_image_selector: ".goods-tile__picture"
+  product_image_selector: "#\\#scrollArea > div.product-about > div.product-about__left > div > rz-product-gallery-main > app-slider.main-slider.ng-star-inserted > div > div.simple-slider__holder.carousel > ul > li:nth-child(2) > div > rz-gallery-main-content-image > img"
 
-  # CSS селектор для отримання кількості відгуків
-  product_image_selector: ".rating-block-content"
+  product_links_selector: "rz-catalog-tile app-goods-tile-default div.goods-tile__inner div.goods-tile__content rz-button-product-page:nth-child(2) > a"
+
+  product_list_selector: "body > rz-app-root > div > div > rz-category > div > main > rz-catalog > div > div > section > rz-grid > ul"

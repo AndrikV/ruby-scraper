@@ -9,3 +9,7 @@ gem 'selenium-webdriver', '~> 4.25'
 gem 'rubocop', '~> 1.66', '>= 1.66.1'
 
 gem 'faker'
+
+gem 'concurrent-ruby'
+
+gem 'open-uri'
