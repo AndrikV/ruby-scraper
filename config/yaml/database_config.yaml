@@ -1,6 +1,6 @@
 database_config:
   # Тип бази даних, що використовується в проекті
-  database_type: sqlite    # або 'mongodb'
+  database_type: sqlite    # 'sqlite' або 'mongodb'
 
   sqlite_database:
     # Шлях до файлу бази даних SQLite

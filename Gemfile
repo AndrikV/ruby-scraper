@@ -13,3 +13,7 @@ gem 'faker'
 gem 'concurrent-ruby'
 
 gem 'open-uri'
+
+gem 'sqlite3'
+
+gem 'mongo'

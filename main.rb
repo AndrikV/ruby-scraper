@@ -182,3 +182,21 @@ parser.item_collection.save_to_file(app_config.config_data['default']['data_file
 parser.item_collection.save_to_json(app_config.config_data['default']['data_file_prefix'] + '.json')
 parser.item_collection.save_to_csv(app_config.config_data['default']['data_file_prefix'] + '.csv')
 parser.item_collection.save_to_yml(app_config.config_data['default']['data_file_prefix'] + '_yml_dir')
+
+# Тестування класу Configurator
+configurator = Configurator.new
+configurator.configure(
+  run_website_parser: 1,
+  run_save_to_csv: 1,
+  run_save_to_yaml: 1,
+  run_save_to_sqlite: 1,
+  invalid_key: 1  # Невалідний ключ
+)
+puts configurator.config
+puts Configurator.available_methods
+
+
+# Тестування класу DatabaseConnector
+connector = DatabaseConnector.new(app_config.config_data['database_config'])
+connector.connect_to_database
+connector.close_connection
