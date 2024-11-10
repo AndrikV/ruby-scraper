@@ -1,18 +1,33 @@
 web_scraping:
-  # URL початкової сторінки для збору даних
-  start_page: https://rozetka.com.ua/notebooks/c80004/
-  
-  # CSS селектор для отримання назв ноутбуків
-  product_name_selector: ".goods-tile__title"
-  
-  # CSS селектор для отримання цін ноутбуків
-  product_price_selector: ".goods-tile__price-value"
-  
-  # CSS селектор для отримання опису ноутбуків
-  product_description_selector: ".goods-tile__description"
-  
-  # CSS селектор для отримання зображень ноутбуків
-  product_image_selector: ".goods-tile__picture"
+  timeout: 10
 
-  # CSS селектор для отримання кількості відгуків
-  product_image_selector: ".rating-block-content"
+  start_page:
+    # URL початкової сторінки для збору даних
+    link: https://rozetka.com.ua/notebooks/c80004/
+
+    # Час затримки для завантаження сторінки
+    delay_seconds: 5
+
+    # Максимальна кількіть ноутбуків, для яких потрібно зібрати інформацію
+    max_count_of_laptops: 10
+
+    # Клас для посилань на ноутбуки
+    laptops_link_class: "product-link"
+
+  laptop:
+    # CSS селектор для отримання назв ноутбуків
+    id_selector: "#\\#scrollArea > div.product-about > div.product-about__right > div > rz-title-block > div > div.rating.text-base > span"
+
+    # CSS селектор для отримання назв ноутбуків
+    name_selector: "#\\#scrollArea > div.product-about > div.product-about__right > div > rz-title-block > div > div.inner > div > h1"
+  
+    # CSS селектор для отримання цін ноутбуків
+    price_selector: "#\\#scrollArea > div.product-about > div.product-about__right > div > rz-product-main-info > div > div.product-about__block.empty-none.ng-star-inserted > div > div.product-price__wrap.ng-star-inserted > p.product-price__big.product-price__big-color-red"
+    price_alt_selector: "#\\#scrollArea > div.product-about > div.product-about__right > div > rz-product-main-info > div > div.product-about__block.empty-none.ng-star-inserted > div > div.product-price__wrap.ng-star-inserted > p"
+    
+    # CSS селектор для отримання рейтингу ноутбуків
+    rating_selector: "#\\#scrollArea > div.product-about > div.product-about__right > div > rz-title-block > div > div.rating.text-base > rz-stars-rating-progress > div > div.stars__rating"
+    rating_amount_selector: "#\\#scrollArea > div.product-about > div.product-about__right > div > rz-title-block > div > div.rating.text-base > a"
+  
+    # CSS селектор для отримання зображень ноутбуків
+    image_selector: "#\\#scrollArea > div.product-about > div.product-about__left > div > rz-product-gallery-main > app-slider.main-slider.ng-star-inserted > div > div.simple-slider__holder.carousel > ul > li:nth-child(2) > div > rz-gallery-main-content-image > img"

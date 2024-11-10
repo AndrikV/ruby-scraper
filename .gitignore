@@ -1,4 +1,4 @@
 Gemfile.lock
 ruby_venv
 .bundle
-logs
+output

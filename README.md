@@ -6,3 +6,8 @@
   2. Назва
   3. Кількість відгуків
   4. Ціна
+
+# Run
+`bundle install --path ruby_venv`
+
+`bundle exec ruby main.rb`

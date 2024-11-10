@@ -1,6 +1,6 @@
 logging:
   # місце розміщення папки для логів
-  directory: logs
+  directory: output/logs
 
   # рівень логування
   level: DEBUG

@@ -3,11 +3,10 @@ require 'erb'
 require 'json'
 
 class AppConfigLoader
-  attr_reader :config_data, :loaded_libs
+  attr_reader :config_data
 
   def initialize
     @config_data = {}
-    @loaded_libs = []
   end
 
   def config(main_config_path, additional_configs_dir)
@@ -39,16 +38,15 @@ class AppConfigLoader
     system_libs = %w[date yaml json]
 
     system_libs.each do |lib|
-      require lib
-      @loaded_libs << lib
+      unless $LOADED_FEATURES.include?(lib)
+        require lib
+      end
     end
 
     Dir.glob("#{libs_dir}/*.rb").each do |file|
-      file_name = File.basename(file, ".rb")
-      puts file
-      next if @loaded_libs.include?(file_name)
-      require_relative file
-      @loaded_libs << file_name
+      unless $LOADED_FEATURES.include?(File.basename(file, ".rb"))
+        require_relative file
+      end
     end
   end
 
