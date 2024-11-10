@@ -2,6 +2,7 @@ require 'faker'
 require 'json'
 require 'csv'
 require 'yaml'
+require 'concurrent-ruby'
 # require_relative 'logger_manager'
 
 
@@ -15,7 +16,7 @@ module MyApplicationName
     @@object_num = 0
 
     def initialize
-      @items = []
+      @items = Concurrent::Array.new
       self.class.increment_count
       LoggerManager.log_processed_file("ItemCollection initialized")
     end
