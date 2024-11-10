@@ -9,4 +9,7 @@ default:
   yaml_dir: config/yaml
   
   # Директорія для медіа-файлів (зображення, відео тощо)
-  media_dir: media
+  media_dir: output/media
+
+  # Data file template
+  data_file_prefix: output/data

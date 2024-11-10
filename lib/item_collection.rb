@@ -3,8 +3,7 @@ require 'json'
 require 'csv'
 require 'yaml'
 require 'concurrent-ruby'
-# require_relative 'logger_manager'
-
+require_relative 'item_container'
 
 module MyApplicationName  
   class ItemCollection

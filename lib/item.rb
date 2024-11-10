@@ -1,4 +1,3 @@
-require_relative 'logger_manager'
 require 'faker'
 
 Faker::Config.random = Random.new(1234)
@@ -7,14 +6,25 @@ module MyApplicationName
   class Item
     include Comparable
 
-    attr_accessor :name, :price, :rating, :rating_amount, :image_path
+    attr_accessor :id, :name, :price, :rating, :rating_amount, :image_path
 
     def initialize(params = {})
+      @id = params[:id] || nil
       @name = params[:name] || "Placeholder"
       @price = params[:price] || 0.0
       @rating = params[:rating] || 0.0
       @rating_amount = params[:rating_amount] || 0
       @image_path = params[:image_path] || "default.png"
+
+      if @id.nil?
+        LoggerManager.log_error("ID has been not received")
+        raise "ID has been not received"
+      end
+
+      if @id <= 0
+        LoggerManager.log_error("Invalid id #{@id}. ID cannot be negative.")
+        raise "Id cannot be negative"
+      end
 
       if @price < 0
         LoggerManager.log_error("Invalid price #{@price}. Price cannot be negative.")

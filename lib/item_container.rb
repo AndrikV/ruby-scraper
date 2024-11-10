@@ -1,5 +1,4 @@
 module ItemContainer
-
     module ClassMethods
       def class_info
         "#{self.name} - Version 1.0"

@@ -1,18 +1,15 @@
 require_relative 'app_config_loader'
-require_relative 'logger_manager'
-require_relative 'item'
-require_relative 'item_container'
-require_relative 'item_collection'
-require_relative 'simple_parser'
 
 app_config = AppConfigLoader.new
-app_config.load_libs('../lib')
+app_config.load_libs('lib')
 app_config.config('config/default_config.yaml', 'config/yaml')
 app_config.pretty_print_config_data()
+
 MyApplicationName::LoggerManager.setup(app_config.config_data['logging'])
+
+# Тестування логування
 # MyApplicationName::LoggerManager.log_processed_file('Processed a file successfully.')
 # MyApplicationName::LoggerManager.log_error('An error occurred while processing the file.')
-
 
 # # Item Validation 
 # item1 = MyApplicationName::Item.new(
@@ -179,6 +176,9 @@ MyApplicationName::LoggerManager.setup(app_config.config_data['logging'])
 
 # Parser Validation
 
-parser = SimpleWebsiteParser.new('config/yaml/web_parser.yaml')
+parser = SimpleWebsiteParser.new(app_config.config_data)
 parser.start_parse
-
+parser.item_collection.save_to_file(app_config.config_data['default']['data_file_prefix'] + '.txt')
+parser.item_collection.save_to_json(app_config.config_data['default']['data_file_prefix'] + '.json')
+parser.item_collection.save_to_csv(app_config.config_data['default']['data_file_prefix'] + '.csv')
+parser.item_collection.save_to_yml(app_config.config_data['default']['data_file_prefix'] + '_yml_dir')
