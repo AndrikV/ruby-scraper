@@ -22,17 +22,17 @@ module ItemContainer
     module InstanceMethods
       def add_item(item)
         @items << item
-        MyApplicationName::LoggerManager.log_processed_file("Item added: #{item.to_s}")
+        MyApplicationName::LoggerManager.log_info("Item added: #{item.to_s}")
       end
 
       def remove_item(item)
         @items.delete(item)
-        MyApplicationName::LoggerManager.log_processed_file("Item removed: #{item.to_s}")
+        MyApplicationName::LoggerManager.log_info("Item removed: #{item.to_s}")
       end
 
       def delete_items
         @items.clear
-        MyApplicationName::LoggerManager.log_processed_file("All items cleared from collection")
+        MyApplicationName::LoggerManager.log_info("All items cleared from collection")
       end
 
       def show_all_items

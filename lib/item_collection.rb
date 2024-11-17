@@ -17,7 +17,7 @@ module MyApplicationName
     def initialize
       @items = Concurrent::Array.new
       self.class.increment_count
-      LoggerManager.log_processed_file("ItemCollection initialized")
+      LoggerManager.log_info("ItemCollection initialized")
     end
 
     def each(&block)
@@ -26,12 +26,12 @@ module MyApplicationName
 
     def save_to_file(filename)
       File.open(filename, 'w') { |file| @items.each { |item| file.puts item.to_s } }
-      LoggerManager.log_processed_file("Items saved to text file: #{filename}")
+      LoggerManager.log_info("Items saved to text file: #{filename}")
     end
 
     def save_to_json(filename)
       File.open(filename, 'w') { |file| file.write(JSON.pretty_generate(@items.map(&:to_h))) }
-      LoggerManager.log_processed_file("Items saved to JSON file: #{filename}")
+      LoggerManager.log_info("Items saved to JSON file: #{filename}")
     end
 
     def save_to_csv(filename)
@@ -39,7 +39,7 @@ module MyApplicationName
         csv << ['name', 'price', 'rating', 'rating_amount', 'image_path']
         @items.each { |item| csv << [item.name, item.price, item.rating, item.rating_amount, item.image_path] }
       end
-      LoggerManager.log_processed_file("Items saved to CSV file: #{filename}")
+      LoggerManager.log_info("Items saved to CSV file: #{filename}")
     end
 
     def save_to_yml(directory)
@@ -47,7 +47,7 @@ module MyApplicationName
       @items.each_with_index do |item, index|
         File.open("#{directory}/item_#{index + 1}.yml", 'w') { |file| file.write(item.to_h.to_yaml) }
       end
-      LoggerManager.log_processed_file("Items saved to YAML files in directory: #{directory}")
+      LoggerManager.log_info("Items saved to YAML files in directory: #{directory}")
     end
 
     def generate_test_items(count = 5)

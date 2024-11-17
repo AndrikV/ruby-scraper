@@ -41,7 +41,7 @@ module MyApplicationName
         raise "Rating amount cannot be negative"
       end
 
-      LoggerManager.log_processed_file("Item initialized with name: #{@name}, price: #{@price}, rating: #{@rating}, rating_amount: #{@rating_amount}, image_path: #{@image_path}")
+      LoggerManager.log_info("Item initialized with name: #{@name}, price: #{@price}, rating: #{@rating}, rating_amount: #{@rating_amount}, image_path: #{@image_path}")
 
       yield(self) if block_given?
     end
@@ -65,7 +65,7 @@ module MyApplicationName
 
     def update
       yield(self) if block_given?
-      LoggerManager.log_processed_file("Item updated with name: #{@name}, price: #{@price}, rating: #{@rating}, rating_amount: #{@rating_amount}, image_path: #{@image_path}")
+      LoggerManager.log_info("Item updated with name: #{@name}, price: #{@price}, rating: #{@rating}, rating_amount: #{@rating_amount}, image_path: #{@image_path}")
     end
 
     def self.generate_fake
@@ -76,7 +76,7 @@ module MyApplicationName
         rating_amount: Faker::Number.between(from: 1, to: 1000),
         image_path: Faker::LoremFlickr.image,
       )
-      LoggerManager.log_processed_file("Generated fake Item: #{item.to_s}")
+      LoggerManager.log_info("Generated fake Item: #{item.to_s}")
       item
     end
 

@@ -21,7 +21,7 @@ module MyApplicationName
                 @error_logger.level = Logger.const_get(log_level.upcase)
             end
 
-            def log_processed_file(message)
+            def log_info(message)
                 raise 'Logger not initialized' unless @info_logger
                 @info_logger.info(message)
             end

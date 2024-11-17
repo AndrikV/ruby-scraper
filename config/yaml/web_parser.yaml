@@ -9,7 +9,7 @@ web_scraping:
     delay_seconds: 5
 
     # Максимальна кількіть ноутбуків, для яких потрібно зібрати інформацію
-    max_count_of_laptops: 10
+    max_count_of_laptops: 5
 
     # Клас для посилань на ноутбуки
     laptops_link_class: "product-link"

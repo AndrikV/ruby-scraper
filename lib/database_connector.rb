@@ -3,7 +3,7 @@ require 'mongo'
 require 'yaml'
 
 class DatabaseConnector
-  attr_accessor :db
+  attr_reader :db, :config
 
   def initialize(config)
     @config = config
@@ -25,8 +25,7 @@ class DatabaseConnector
 
   def close_connection
     if @db
-      @db.close if @config['database_type'] == 'sqlite'
-      @db.close if @config['database_type'] == 'mongodb'
+      @db.close
       @db = nil
       puts 'Database connection closed.'
     else
@@ -35,8 +34,6 @@ class DatabaseConnector
   rescue => e
     puts "Error closing database connection: #{e.message}"
   end
-
-  private
 
   def connect_to_sqlite
     db_path = @config['sqlite_database']['db_file']
@@ -53,5 +50,48 @@ class DatabaseConnector
     puts "Connected to MongoDB database: #{database_name}"
   rescue => e
     puts "Error connecting to MongoDB: #{e.message}"
+  end
+
+  def save_parsed_data(item_collection)
+    puts item_collection
+    if @db.instance_of? Mongo::Client
+      begin
+        collection = @db[:data]
+        collection.insert_many(item_collection.map(&:to_h))
+        puts "Parsed data has been saved to MongoDB database successfully"
+      rescue => e
+        puts "Failed to save parsed data to MongoDB: #{e.message}"
+        raise
+      end
+      return
+    end
+
+    if @db.instance_of? SQLite3::Database
+      begin
+        db.execute <<-SQL
+          CREATE TABLE IF NOT EXISTS data (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            laptop_name TEXT,
+            price INTEGER,
+            rating INTEGER,
+            rating_amount INTEGER,
+            image_path TEXT
+          );
+        SQL
+        puts "Table `data` ensured to exist"
+
+        item_collection.each { |item|
+          @db.execute("INSERT INTO data (laptop_name, price, rating, rating_amount, image_path) VALUES (?, ?, ?, ?, ?);", 
+                      [item.name, item.price, item.rating, item.rating_amount, item.image_path])
+        }      
+        puts "Parsed data has been saved to SQLite database successfully"
+      rescue => e
+        puts "Failed to save parsed data to SQLite database: #{e.message}"
+        raise
+      end
+      return
+    end
+
+    puts "Warning: no database is connected or unsupported type of database"
   end
 end
