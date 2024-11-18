@@ -178,7 +178,7 @@ class SimpleWebsiteParser
     image_path = File.join(@config['default']['media_dir'], "#{id}.jpg")
     
     URI.open(image_url) do |image|
-      File.open("#{image_path}.jpg", 'wb') do |file|
+      File.open("#{image_path}", 'wb') do |file|
       file.write(image.read)
       end
     end

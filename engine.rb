@@ -56,7 +56,7 @@ class Engine
         unless respond_to?(method_name, true)
           log_info("Method #{method_name} not found")
         end
-        if to_run
+        unless to_run.zero?
           send(method_name)
         end
       rescue => e
