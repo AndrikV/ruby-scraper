@@ -17,3 +17,7 @@ gem 'open-uri'
 gem 'sqlite3'
 
 gem 'mongo'
+
+gem 'sidekiq'
+
+gem 'pony'

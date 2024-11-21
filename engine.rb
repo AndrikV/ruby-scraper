@@ -1,3 +1,4 @@
+require 'zip'
 require_relative 'app_config_loader'
 
 class Engine
@@ -38,6 +39,16 @@ class Engine
       @parser = SimpleWebsiteParser.new @config 
 
       run_methods(config_params)
+
+      # Архівація створених файлів
+      archive_name = "output/parsed_data_#{Time.now.strftime('%Y%m%d%H%M%S')}.zip"
+      Zip::File.open(archive_name, Zip::File::CREATE) do |zipfile|
+        Dir["output/**/**"].each do |file|
+          zipfile.add(file.sub('output/', ''), file)
+        end
+      end
+
+      ArchiveSender.perform_async(archive_name, "vakariuk.andrii@chnu.edu.ua")
     rescue => e
       log_error("Failed to load configuration: #{e.message}")
       raise
@@ -126,6 +137,25 @@ class Engine
       log_error("Failed to save to sqlite: #{e.message}")
     ensure
       @database_manager.close_connection
+    end
+  end
+
+  def archive_files(files, archive_name)
+    log("Creating archive: #{archive_name}")
+    begin
+      Zip::File.open(archive_name, Zip::File::CREATE) do |zipfile|
+        files.each do |file|
+          if File.exist?(file)
+            zipfile.add(File.basename(file), file)
+            log_info("Added #{file} to archive")
+          else
+            log_error("File #{file} not found. Skipping.")
+          end
+        end
+      end
+      log_info("Archive created successfully: #{archive_name}")
+    rescue => e
+      log_error("Error creating archive: #{e.message}")
     end
   end
 end
